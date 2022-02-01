@@ -1,2 +1,2 @@
-# hulto.gitlab.io
+# hulto.github.io
 Personal site
