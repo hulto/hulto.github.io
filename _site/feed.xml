@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Hul.to</title>
+		<description>My personal site for blog posts and guides.</description>
+		<link>/</link>
+		<atom:link href="/" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Bsides Rochester 2019 - Goofkit - Getting goofy with kernel functions</title>
+				<description>&lt;p&gt;&lt;img src=&quot;https://www.youtube.com/watch?v=oAwHJQvxO6M&quot; alt=&quot;&quot; /&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=oAwHJQvxO6M&quot;&gt;https://www.youtube.com/watch?v=oAwHJQvxO6M&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt; Two easy techniques to make your rootkit stealthier and more robust! Goofkit is a new Linux Kernel Module (LKM) rootkit being released. It uses both inline hooking and trampolining to create a more robust, and stealthy rootkit. This talk will cover how traditional LKM rootkits are made, what can be done better, and why. This talk is aimed at those who are interested in building a rootkit, looking to improve their own, or just learn more about how Linux works.&lt;/p&gt;
+</description>
+				<pubDate>Sun, 24 Mar 2019 00:00:00 -0400</pubDate>
+				<link>/general/demo/sample/2019/03/24/getting-goofy-with-kernel-functions.html</link>
+				<guid isPermaLink="true">/general/demo/sample/2019/03/24/getting-goofy-with-kernel-functions.html</guid>
+			</item>
+		
+			<item>
+				<title>Trampolining rootkits with Rayne</title>
+				<description>&lt;p&gt;&lt;img src=&quot;https://www.youtube.com/watch?v=wVG2IUaDV40&quot; alt=&quot;&quot; /&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=wVG2IUaDV40&quot;&gt;https://www.youtube.com/watch?v=wVG2IUaDV40&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt; Jack “Hulto” McKenna and Rayne Cafaro provide a detailed explanation of how rootkits work and what they’re capable of. They provide details on how in-line function hooking works as well as trampolining within the kernel.&lt;/p&gt;
+</description>
+				<pubDate>Sat, 03 Nov 2018 00:00:00 -0400</pubDate>
+				<link>/general/demo/sample/2018/11/03/trampolining-rootkits-with-rayne.html</link>
+				<guid isPermaLink="true">/general/demo/sample/2018/11/03/trampolining-rootkits-with-rayne.html</guid>
+			</item>
+		
+			<item>
+				<title>Red team fire talk</title>
+				<description>&lt;p&gt;&lt;img src=&quot;https://www.youtube.com/watch?v=Ey8DoePoZ9k&quot; alt=&quot;&quot; /&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=Ey8DoePoZ9k&quot;&gt;https://www.youtube.com/watch?v=Ey8DoePoZ9k&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt; Micah “knif3” Martin and Jack “Hulto” McKenna go in detail about the various tactics that the RIT redteam uses when volunteering at competitions. This talk is aimed at helping students who plan on blue teaming prepare for their competitions.&lt;/p&gt;
+</description>
+				<pubDate>Sat, 03 Nov 2018 00:00:00 -0400</pubDate>
+				<link>/general/demo/sample/2018/11/03/redteam-firetalk.html</link>
+				<guid isPermaLink="true">/general/demo/sample/2018/11/03/redteam-firetalk.html</guid>
+			</item>
+		
+			<item>
+				<title>If you can't hack it pack it - AV bypass using crypters and packers</title>
+				<description>&lt;p&gt;&lt;img src=&quot;https://www.youtube.com/watch?v=JcV-YegR9iQ&quot; alt=&quot;&quot; /&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=JcV-YegR9iQ&quot;&gt;https://www.youtube.com/watch?v=JcV-YegR9iQ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt; Jack McKenna discusses how packers and crypters work to hide malware from antivirus products&lt;/p&gt;
+</description>
+				<pubDate>Wed, 31 Oct 2018 00:00:00 -0400</pubDate>
+				<link>/general/demo/sample/2018/10/31/av-byass-with-crypters-and-packers.html</link>
+				<guid isPermaLink="true">/general/demo/sample/2018/10/31/av-byass-with-crypters-and-packers.html</guid>
+			</item>
+		
+			<item>
+				<title>CVE Easy - Discovering CVE-2018-16546</title>
+				<description>&lt;p&gt;&lt;img src=&quot;https://www.youtube.com/watch?v=3LgypRsJ5kI&quot; alt=&quot;&quot; /&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=3LgypRsJ5kI&quot;&gt;https://www.youtube.com/watch?v=3LgypRsJ5kI&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt; Walkthrough of how I found CVE-2018-16546 in Amrcest IP camera and how you can find CVEs too.&lt;/p&gt;
+</description>
+				<pubDate>Fri, 12 Oct 2018 00:00:00 -0400</pubDate>
+				<link>/general/demo/sample/2018/10/12/cveeasy.html</link>
+				<guid isPermaLink="true">/general/demo/sample/2018/10/12/cveeasy.html</guid>
+			</item>
+		
+			<item>
+				<title>Root-kits a comic book adventure</title>
+				<description>&lt;p&gt;&lt;img src=&quot;https://www.youtube.com/watch?v=8u_4mWUAZxo&quot; alt=&quot;&quot; /&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=8u_4mWUAZxo&quot;&gt;https://www.youtube.com/watch?v=8u_4mWUAZxo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt; Linux Kernel module rootkits and the difference between inline hooking and overwriting the system call table&lt;/p&gt;
+</description>
+				<pubDate>Sat, 29 Sep 2018 00:00:00 -0400</pubDate>
+				<link>/general/demo/sample/2018/09/29/comicbook-rootkits.html</link>
+				<guid isPermaLink="true">/general/demo/sample/2018/09/29/comicbook-rootkits.html</guid>
+			</item>
+		
+			<item>
+				<title>DEFCON r00tz An Overview of CTF Events</title>
+				<description>&lt;p&gt;&lt;img src=&quot;https://www.youtube.com/watch?v=JcV-YegR9iQ&quot; alt=&quot;&quot; /&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=JcV-YegR9iQ&quot;&gt;https://www.youtube.com/watch?v=JcV-YegR9iQ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt; Talk and workshop teaching kids 16 and under how to get started in CTFs. Discussed a range of problems from ceasar ciphers to buffer overflows.&lt;/p&gt;
+</description>
+				<pubDate>Wed, 09 Sep 2015 00:00:00 -0400</pubDate>
+				<link>/general/demo/sample/2015/09/09/defcon-r00tz.html</link>
+				<guid isPermaLink="true">/general/demo/sample/2015/09/09/defcon-r00tz.html</guid>
+			</item>
+		
+	</channel>
+</rss>
