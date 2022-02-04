@@ -1,11 +1,11 @@
 # General Settings
-name: Steve Austin
-job_title: UI/UX Engineer
-email: youremail@gmail.com
-description: I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.
-avatar: https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg
+name: Hul.to
+job_title: Cybersecurity Engineer
+email: hulto@hul.to
+description: Cyber security professional with a passion for tool development, and automation.
+avatar: /assets/png/avatar.png
 favicon: /favicon.ico
-twitter_handler: your_handler
+twitter_handler: hultoko
 analytics_code: UA-XXXXXXX-2
 disqus: your_disqus_site
 
