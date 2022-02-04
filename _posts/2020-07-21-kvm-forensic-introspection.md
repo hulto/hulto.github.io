@@ -5,15 +5,17 @@ categories: [general, guide]
 tags: [infrastructure, kvm, security, forensices, defense, guide]
 description: Guide to setup kvm with support for introspection.
 ---
+## Assumptions
+* Debian 10
 
 ## Set up KVM
 1. Install kvm
-{% highlight bash linenos %}
+{% highlight bash %}
 sudo apt install qemu qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils libguestfs-tools genisoimage virtinst libosinfo-bin
 {% endhighlight %}
 
 2. Add user permissions
-{% highlight bash linenos %}
+{% highlight bash %}
 sudo usermod -aG libvirt sysadmin
 sudo adduser sysadmin libvirt-qemu
 id
@@ -21,7 +23,7 @@ id
 
 3. Configure briged networking
   1. Use real existing network
-{% highlight bash linenos %}
+{% highlight bash %}
 sudo vi /etc/network/interfaces.d/br0
 
 auto br0
@@ -52,7 +54,7 @@ sudo virsh net-start br0
 {% endhighlight %}
 
 5. Create a VM
-{% highlight bash linenos %}
+{% highlight bash %}
 cd /var/lib/libvirt/boot/
 sudo wget https://mirrors.kernel.org/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1708.iso
 
@@ -78,7 +80,7 @@ ssh user@hostname -L 5900:127.0.0.1:5900
 
 ## Configure introspection (patched kernel method)
 1. Install LibVMI
-{% highlight bash linenos %}
+{% highlight bash %}
 sudo apt-get install cmake flex bison libglib2.0-dev libvirt-dev libjson-c-dev libyajl-dev git
 
 git clone https://github.com/KVM-VMI/libvmi.git
