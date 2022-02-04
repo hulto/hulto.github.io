@@ -41,8 +41,8 @@ show_categories: 1
 show_tags: 1
 show_email: 0
 show_rss: 0
-show_comments: 1
-show_menu: 1
+show_comments: 0
+show_menu: 0
 fixed_sidebar: 1
 
 # Defaults
