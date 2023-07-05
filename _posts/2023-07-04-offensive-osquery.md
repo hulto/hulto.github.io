@@ -46,10 +46,10 @@ The downside to OSQuery out of the box is it doesn't support arbitrary command e
 
 ## How
 
-1. Signup for a free trial of fleetdm
+- Signup for a free trial of fleetdm
 	1. https://fleetdm.com/try-fleet/register
 	2. Setup an account and login.
-2. Adding hosts
+- Adding hosts
 	1. Once logged in Click "Add hosts"
 	2. Select your hosts OS
 	3. Unselect include Fleet Desktop
@@ -65,11 +65,11 @@ source /etc/default/orbit
 ctrl-c to exit.
 ```
 
-3. Build the extension
+- Build the extension
 	1. `git clone https://github.com/hulto/osquery-exec.git`
 	2. `cd osquery-exec`
 	3. `go build -o exec.ext ./`
-4. Install the `osquery-exec` plugin.
+- Setup the `osquery-exec` plugin.
 	1. Stop the running instance of orbit
 	2. Fill out the `/opt/orbit/osquery.flags` file
 
@@ -78,13 +78,13 @@ ctrl-c to exit.
 --extensions_interval=3
 --allow_unsafe
 ```
-
-		3. Upload our extension to the remote host `mkdir /test && cp /tmp/exec.ext /test/exec.ext`
-		4. Add our extension to those that will be loaded
-			1. `echo "/test/exec.ext" > /etc/osquery/extensions.load`
-1. Restart the orbit agent
+- Install the `osquery-exec` plugin.
+    1. Upload our extension to the remote host `mkdir /test && cp /tmp/exec.ext /test/exec.ext`
+    2. Add our extension to those that will be loaded
+        1. `echo "/test/exec.ext" > /etc/osquery/extensions.load`
+- Restart the orbit agent
 	1. `/opt/orbit/bin/orbit/orbit --insecure --fleet-url $ORBIT_FLEET_URL`
-2. Execute commands 🥳
+- Execute commands 🥳
 
 <figure class="aligncenter">
     <img src="/assets/png/osquery-cmdexec-whoami.png" />
