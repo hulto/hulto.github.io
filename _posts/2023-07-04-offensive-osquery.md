@@ -11,6 +11,7 @@ OSQuery is an open-source endpoint visibility tool created by Meta. It allows ad
 ```SQL
 $ osqueryi
 osquery> SELECT DISTINCT
+osquery> SELECT DISTINCT
     ...>   process.name,
     ...>   listening.port,
     ...>   process.pid
@@ -55,13 +56,15 @@ The downside to OSQuery out of the box is it doesn't support arbitrary command e
 	4. Copy the installer package onto the target host.
 	5. Install the package
 		1. You may have issues getting things to run I wasn't able to install it a service in my container and had to manually run it.
-```
+
+```bash
 cat /etc/default/orbit
 source /etc/default/orbit
 /opt/orbit/bin/orbit/orbit --insecure --fleet-url $ORBIT_FLEET_URL --enroll-secret $ORBIT_ENROLL_SECRET --debug
 
 ctrl-c to exit.
 ```
+
 3. Build the extension
 	1. `git clone https://github.com/hulto/osquery-exec.git`
 	2. `cd osquery-exec`
@@ -69,11 +72,13 @@ ctrl-c to exit.
 4. Install the `osquery-exec` plugin.
 	1. Stop the running instance of orbit
 	2. Fill out the `/opt/orbit/osquery.flags` file
-```
+
+```bash
 --extensions_timeout=3
 --extensions_interval=3
 --allow_unsafe
 ```
+
 		3. Upload our extension to the remote host `mkdir /test && cp /tmp/exec.ext /test/exec.ext`
 		4. Add our extension to those that will be loaded
 			1. `echo "/test/exec.ext" > /etc/osquery/extensions.load`
