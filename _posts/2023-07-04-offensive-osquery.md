@@ -5,6 +5,11 @@ categories: [general]
 tags: [redteam, c2, devops, infra]
 description: Diving into how a traditionally defensive tool OSQuery can be used to perform red team testing at scale.
 ---
+<figure class="aligncenter">
+    <img src="/assets/png/osquery-cmdexec-whoami.png" />
+    <figcaption>Red teaming with OSQuery</figcaption>
+</figure>
+Red teaming with OSQuery
 
 ## What is OSQuery
 OSQuery is an open-source endpoint visibility tool created by Meta. It allows administrators to query hosts across their organization like they would a SQL database. An example from the [osquery site](https://osquery.readthedocs.io/en/stable/introduction/using-osqueryi/):
