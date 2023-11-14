@@ -55,10 +55,10 @@ Here's what the process tree looks like when the script is run normally:
 
 | Activity | Backgrounded | Parent process| Signal sent | STDOUT | STDERR | STDIN |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [[Linux child process ownership guide#Background\|Background]] | Yes | Same | N/a | Still attached | Still attached | Detached |
-| [[Linux child process ownership guide#Double forking\|Double forking]] | Not without backgrounding | 1 | N/a | Still attached | Still attached | Detached |
-| [[Linux child process ownership guide#nohup\|nohup]] | No | Same | Protected from hangups | Redirected to `./nohup.out` | Redirected to `./nohup.out` | Still attached |
-| [[Linux child process ownership guide#Disown\|Disown]] | Yes done before disown | Same | Protects from signals sent to parent | Still attached | Still attached | - |
+| Background | Yes | Same | N/a | Still attached | Still attached | Detached |
+| Double forking | Not without backgrounding | 1 | N/a | Still attached | Still attached | Detached |
+| nohup | No | Same | Protected from hangups | Redirected to `./nohup.out` | Redirected to `./nohup.out` | Still attached |
+| Disown | Yes done before disown | Same | Protects from signals sent to parent | Still attached | Still attached | - |
 
 
 ### Background
@@ -86,7 +86,7 @@ to exit a backgrounded process run the command `fg` to reconnect the STDIN pipe 
 If you have more than one backgrounded process you may wish to kill one that's not the most recent. This can be done using the jobs command.
 
 <figure class="aligncenter">
-    <img src="/assets/png/linux-crild-process-background-jobs.png" />
+    <img src="/assets/png/linux-child-process-background-jobs.png" />
     <figcaption>Figure 3. - The jobs list tracking backgrounded processses.</figcaption>
 </figure>
 
@@ -242,9 +242,10 @@ If you want to bring the job back to the foreground you can use the fg command.
 
 
 # Additional reading
-- Detailed explanation of the disown arguments https://phoenixnap.com/kb/disown-command-linux
-- The difference between nohup and disown https://unix.stackexchange.com/a/148698
-- Closing file descriptors https://www.baeldung.com/linux/bash-close-file-descriptors#:~:text=%3E%26%2D%20is%20the%20syntax%20to%20close%20the%20specified%20file%20descriptor
-- More detail on disown SIGHUP behavior http://wresch.github.io/2014/02/27/bash-nohup-disown-child.html
-- Difference between nohup and disown -h https://unix.stackexchange.com/a/484283
-- Termination signal reference https://www.gnu.org/software/libc/manual/html_node/Termination-Signals.html
+- Detailed explanation of the disown arguments [https://phoenixnap.com/kb/disown-command-linux](https://phoenixnap.com/kb/disown-command-linux)
+- The difference between nohup and disown [https://unix.stackexchange.com/a/148698](https://unix.stackexchange.com/a/148698)
+- Closing file descriptors [https://www.baeldung.com/linux/bash-close-file-descriptors#:~:text=%3E%26%2D%20is%20the%20syntax%20to%20close%20the%20specified%20file%20descriptor](https://www.baeldung.com/linux/bash-close-file-descriptors#:~:text=%3E%26%2D%20is%20the%20syntax%20to%20close%20the%20specified%20file%20descriptor)
+- More detail on disown SIGHUP behavior [http://wresch.github.io/2014/02/27/bash-nohup-disown-child.html](http://wresch.github.io/2014/02/27/bash-nohup-disown-child.html)
+- Difference between nohup and disown -h [https://unix.stackexchange.com/a/484283](https://unix.stackexchange.com/a/484283)
+- Termination signal reference [https://www.gnu.org/software/libc/manual/html_node/Termination-Signals.html]
+(https://www.gnu.org/software/libc/manual/html_node/Termination-Signals.html)
