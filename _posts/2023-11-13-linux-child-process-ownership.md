@@ -247,5 +247,4 @@ If you want to bring the job back to the foreground you can use the fg command.
 - Closing file descriptors [https://www.baeldung.com/linux/bash-close-file-descriptors#:~:text=%3E%26%2D%20is%20the%20syntax%20to%20close%20the%20specified%20file%20descriptor](https://www.baeldung.com/linux/bash-close-file-descriptors#:~:text=%3E%26%2D%20is%20the%20syntax%20to%20close%20the%20specified%20file%20descriptor)
 - More detail on disown SIGHUP behavior [http://wresch.github.io/2014/02/27/bash-nohup-disown-child.html](http://wresch.github.io/2014/02/27/bash-nohup-disown-child.html)
 - Difference between nohup and disown -h [https://unix.stackexchange.com/a/484283](https://unix.stackexchange.com/a/484283)
-- Termination signal reference [https://www.gnu.org/software/libc/manual/html_node/Termination-Signals.html]
-(https://www.gnu.org/software/libc/manual/html_node/Termination-Signals.html)
+- Termination signal reference [https://www.gnu.org/software/libc/manual/html_node/Termination-Signals.html](https://www.gnu.org/software/libc/manual/html_node/Termination-Signals.html)
