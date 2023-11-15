@@ -206,7 +206,7 @@ If we were able to capture the process tree before the intermediate parent proce
 ## Getting fancy
 ### Output redirectionz
 
-It's nice that nohup reconnects our processes output pipes but often we don't want them logged to the `nohup.out` file. If we want to run multiple nohup-ed commands having all of them append to `nohup.out` would be gross.
+It's nice that nohup creates new pipes for our processes output but often we don't want them logged to the `nohup.out` file. If we want to run multiple nohup-ed commands having all of them append to `nohup.out` would be gross.
 To fix this we'll use output redirection.
 
 Here we redirect stdout (and stderr which nohup has already redirected to stdout) to a log file in `/tmp/`
