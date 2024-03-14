@@ -38,10 +38,8 @@ So instead I setup a home version with an intel NUC, a cloudflare tunnel and doc
 - VSCode
 	- devcontainers extension
 
-```ad-warning
-title: Security
+🚨 **Security Warning** 🚨
 We're going to expose an SSH service to the internet make sure to disable password auth and enforce key auth only.
-```
 
 #### Process
 
