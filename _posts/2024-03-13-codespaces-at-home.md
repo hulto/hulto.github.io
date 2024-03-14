@@ -71,7 +71,7 @@ ssh docker-nuc docker ps
 7. Test the connection by running `docker ps`
 8. At this point we're able to spin up devcontainers on the remote host but only when we're connected to our local network. We could spin up a VPN to our homelab but that can make VPNing to other environments while we're connected to the dev container hard.
 9. In order to connect to our docker nuc from anywhere we need to setup a tunnel from our lab to the could ☁️
-10. To do this we'll use a Cloud Flare tunnel https://one.dash.cloudflare.com/?to=/:account/access/tunnels
+10. To do this we'll use a [Cloud Flare tunnel](https://one.dash.cloudflare.com/?to=/:account/access/tunnels)
 11. Create a new tunnel and select `cloudflared`
 
 <figure class="aligncenter">
