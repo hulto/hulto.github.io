@@ -8,7 +8,7 @@ description: Rebuilding the homelab with GCP and Harvester
 
 ## My homelab
 
-I've had my homelab for a few years now and use it to test ideas, build side projects, and stay up to date on new technologies. However it's started to show it's age my servers were so old new software would fail with "intel x64 v4 instructions not supported". I figured it's time to upgrade I got rid of the old HP proliant servers and bought two Dell R730's with a combine 512GB of memory and 96 cores.
+I've had my homelab for a few years now and use it to test ideas, build side projects, and stay up to date on new technologies. However it's started to show its age, my servers were so old new software would fail with "intel x64 v4 instructions not supported". Time to upgrade. I got rid of the old HP proliant servers and bought two Dell R730's with a combined 512GB of memory and 96 cores.
 
 Since I was rebuilding from scratch I figured I'd try a new hypervisor since openstack had been a huge headache.
 
@@ -25,7 +25,7 @@ I also wanted to move a few critical services to more reliable hosting so DNS, g
 How do we manage user access without running Windows and Active Directory?
 OIDC!
 
-This is something i've been trying to do for a while and it seems we're finally at a point where most things (even ESXi) support OIDC.
+This is something I've been trying to do for a while and it seems we're finally at a point where most things (even ESXi) support OIDC.
 
 I looked at a few options in this including: Authentik, Authelia, and Okta but ended up choosing Google Identity because it's free (up to 50 users) and managed so I don't have to think about it.
 
