@@ -1,29 +1,22 @@
 ---
 layout: post
-title: Codespaces at home 
+title: Homelab rebuild
 categories: [general, devops, homelab, infra]
 tags: []
 description: Rebuilding the homelab with GCP and Harvester
 ---
 
-### Hardware
+## My homelab
 
-- Dell R730 - 256GB RAM - 48cores
-- Dell R730XD - 256GB RAM - 48cores
-- 2 intel nucs
-- GCP ☁️
+I've had my homelab for a few years now and use it to test ideas, build side projects, and stay up to date on new technologies. However it's started to show it's age my servers were so old new software would fail with "intel x64 v4 instructions not supported". I figured it's time to upgrade I got rid of the old HP proliant servers and bought two Dell R730's with a combine 512GB of memory and 96 cores.
 
-### Critical systems
+Since I was rebuilding from scratch I figured I'd try a new hypervisor since openstack had been a huge headache.
 
-How do we keep critical systems up?
-- Managed services when we can
-- reliably hosted VMs when we can't
+<figure class="aligncenter">
+    <img src="/assets/png/harvester-cluster-capacity.png" />
+</figure>
 
-What is critical?
-- git - Small GCP VM
-- authentication - Google Identity + Small GCP VM for Vault
-- DNS - Google Domains
-- backups - GCP Disk snapshots
+I also wanted to move a few critical services to more reliable hosting so DNS, gitea, and vault all moved to GCP.
 
 ### Capabilities
 
@@ -40,7 +33,7 @@ Google Identity allows users to be managed through google groups (which feels we
 
 The downside to google identity is that you need to grant high level privileges to the IAC in order to manage it and you can only have one consent screen per project making multiple OIDC flows hard.
 
-How do we solve this! Hashicorp vault. We're going to need a KMS anyways for managing terraform secrets might as well use vault for OIDC too. Vault also gives us a nice midleware layer to configure authentication.
+How do we solve this! Hashicorp vault. We're going to need a KMS anyways for managing terraform secrets might as well use vault for OIDC too. Vault also gives us a nice middleware layer to configure authentication.
 
 
 #### Quickly rebuild the lab
@@ -81,3 +74,18 @@ I've been trying to move towards remote dev environments for most projects since
 
 I found [coder](https://coder.com/) which offers on-demand remote dev environment provisoning using Terraform templates. Coder's been incredible providing remote dev environments and leaning into ephemeral compute. Each workspace has a persistent volume for code but deletes the root file system everytime the VM powers down or restarts. This has been great from a security perspective even allowing me to wipe the VMs I accidentally detonated malware on.
 
+
+## Conclusion
+
+So in total the lab is now:
+
+GCP:
+- gitea - Small GCP VM
+- authentication - Google Identity + Small GCP VM for Vault
+- DNS - Google Domains
+- backups - GCP Disk snapshots
+
+On-prem:
+- Coder
+- Garm
+- Harvester (hypervisor)
