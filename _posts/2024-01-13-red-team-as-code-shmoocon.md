@@ -6,6 +6,8 @@ tags: [demo, redteam, infra]
 description: Leverage the benefits of an "as code" process to achieve: repeatability, version tracking, and self documentation to empower IR / detection engineers.
 ---
 
+## Read Team As Code
+
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=IDLMMiqV6ss&t=15993s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 [https://www.youtube.com/watch?v=IDLMMiqV6ss&t=15993s](https://www.youtube.com/watch?v=IDLMMiqV6ss&t=15993s)
 

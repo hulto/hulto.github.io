@@ -6,7 +6,6 @@ tags: []
 description: Developing a self hosted option for remote dev contaniers that can be accessed anywhere.
 ---
 
-
 ### Codespaces
 
 [Codespaces](https://github.com/features/codespaces) is a great option for development especially with large build workloads or limited dev resources.
